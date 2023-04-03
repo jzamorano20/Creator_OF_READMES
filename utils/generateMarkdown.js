@@ -61,7 +61,7 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.Title}
 
 
   ## Table of contents
@@ -78,38 +78,32 @@ function generateMarkdown(data) {
   11. [Video Demonstration](#video-demonstration)
 ## Licensing
   Refer to <https://choosealicense.com/> for licensing information
-  ${licenseBadge(data.license)}
+  ${renderLicenseBadge(data.License)}
 ## Description
   
-    1. Application description: ${data.description}
-    2. I built this app ${data.motivation}
-    3. This app ${data.problems}
+    1. Application description: ${data.Description}
+    2. I built this app ${data.Motivation}
+  
 ## Installation
 You needed to install inquirer using npm i -y in the terminal and make sure you have the correct file integrated in the terminal to be able to run and install it'
   
-    ${data.installation}
-    
-## Usage
-    ${data.usage}
-## Packages
-    ${data.packages}
-## Features
-  
-   ${data.features}
-  
+    ${data.Installation}
+
+## Motavtion
+
+  ${data.Motivation}
+
 ## Resources
   
-   ${data.resources}
+   ${data.Resources}
   
-## Tests
-   ${data.tests}
 ## How to Contribute
   
   ${data.contribute}
 ## Questions
   
-  For any further questions I'm avaialble at ${data.email}
-  To view and clone this project's repository as well as view other projects I'm working on visit ${data.github}
+  For any further questions I'm avaialble at ${data.Email}
+  To view and clone this project's repository as well as view other projects I'm working on visit ${data.Github}
 
 `;
 }
