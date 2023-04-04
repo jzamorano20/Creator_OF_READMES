@@ -29,7 +29,7 @@ const questions =([
     type: 'input',
     message: 'what and how did you install?',
     //name: ' You needed to install inquirer using npm i -y in the terminal and make sure you have the correct file integrated in the terminal to be able to run and install it',
-    name: 'Installation instructions'
+    name: 'Installation'
 }, 
 { type: 'input',
 message: ' whats the usage?',

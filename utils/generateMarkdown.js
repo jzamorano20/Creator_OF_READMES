@@ -52,7 +52,33 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  return LicenseBadge()
+if (license === 'Apache license 2.0') {
+  return 'https://opensource.org/licenses/Apache-2.0';
+} else if (License === 'GNU General Public License v3.0'){
+  return 'https://www.gnu.org/licenses/gpl-3.0';
+} else if (License === 'MIT License'){
+  return 'https://opensource.org/licenses/MIT';
+}else if (License === 'BSD 2-Clause "Simplified" license') {
+  return 'https://opensource.org/licenses/BSD-2-Clause';
+} else if (License === 'BSD 3-CLause "new" or "Revised" License') {
+  return 'https://opensource.org/licenses/BSD-3-Clause'
+} else if (License === 'Boost Software License 1.0') {
+  return 'https://www.boost.org/LICENSE_1_0.txt'
+} else if (License === 'Creative Commons Zero v1.0 Unviersal') {
+  return 'http://creativecommons.org/publicdomain/zero/1.0/'
+} else if (License === 'Eclipse Public License 1.0' ) {
+  return 'https://opensource.org/licenses/EPL-1.0'
+} else if (License ==='GNU Affero General Public License v3.0' ) {
+  return 'https://www.gnu.org/licenses/agpl-3.0'
+} else if (License === 'GNU Gerneral Public License v2.0') {
+  return 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html'
+} else if (License ==='GNU Lesser General Public License v3' ) {
+  return 'https://www.gnu.org/licenses/agpl-3.0'
+} else if (License ===  'Mozilla Public License 2.0') {
+  return 'https://opensource.org/licenses/MPL-2.0'
+} else if (License === 'The Unlicense'){
+  return 'http://unlicense.org/'
+}
 }
 
 // TODO: Create a function that returns the license section of README
@@ -62,50 +88,16 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.Title}
-
-
-  ## Table of contents
-  1. [Licenssing](#licensing)
-  2. [Description](#description)
-  3. [Installation](#installation)
-  4. [Usage](#usage)
-  5. [Packages](#packages)
-  6. [Features](#features)
-  7. [Resources](#resources)
-  8. [Tests](#tests)
-  9. [How to contribute](#how-to-contribute)
-  10. [Questions](#questions)
-  11. [Video Demonstration](#video-demonstration)
-## Licensing
-  Refer to <https://choosealicense.com/> for licensing information
-  ${renderLicenseBadge(data.License)}
-## Description
-  
-    1. Application description: ${data.Description}
-    2. I built this app ${data.Motivation}
-  
-## Installation
-You needed to install inquirer using npm i -y in the terminal and make sure you have the correct file integrated in the terminal to be able to run and install it'
-  
-    ${data.Installation}
-
-## Motavtion
-
-  ${data.Motivation}
-
-## Resources
-  
-   ${data.Resources}
-  
-## How to Contribute
-  
-  ${data.contribute}
-## Questions
-  
-  For any further questions I'm avaialble at ${data.Email}
-  To view and clone this project's repository as well as view other projects I'm working on visit ${data.Github}
-
+  ## ${data.Description}; 
+  ${renderLicenseSection(data.license)};
+  ##Questions;
+  ## ${data.Installation};
+  ## ${data.Motavtion};
+  GitHub Repo: ${data.Github};
+  Email: ${data.Email};
+  ##${data.Resources};
 `;
-}
+};
+
 
 module.exports = generateMarkdown;
