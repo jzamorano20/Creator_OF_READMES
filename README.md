@@ -39,3 +39,5 @@ You needed to install inquirer using npm i or install inquirer in the terminal a
   
   For any further questions I'm avaialble at jose9771@gamil.com
   To view and clone this project's repository as well as view other projects I'm working on visit me on Github and look for user jzamorano20
+
+<!-- TO DO INCLUDE LINK TO VIDEO HERE -->

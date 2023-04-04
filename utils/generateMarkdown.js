@@ -1,6 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  console.log(license)
   if(license === 'Apache license 2.0') {
     return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
   };
@@ -88,14 +89,14 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.Title}
-  ## ${data.Description}; 
-  ${renderLicenseSection(data.license)};
-  ##Questions;
-  ## ${data.Installation};
-  ## ${data.Motavtion};
-  GitHub Repo: ${data.Github};
-  Email: ${data.Email};
-  ##${data.Resources};
+  ## ${data.Description}
+  ${renderLicenseBadge(data.License)}
+  ##Questions
+  ## ${data.Installation}
+  ## ${data.Motavtion}
+  GitHub Repo: ${data.Github}
+  Email: ${data.Email}
+  ##${data.Resources}
 `;
 };
 
