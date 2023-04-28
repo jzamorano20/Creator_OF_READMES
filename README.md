@@ -40,4 +40,9 @@ You needed to install inquirer using npm i or install inquirer in the terminal a
   For any further questions I'm avaialble at jose9771@gamil.com
   To view and clone this project's repository as well as view other projects I'm working on visit me on Github and look for user jzamorano20
 
+## Screenshots
+![screenshot of readme gen](./assets/img/README.png)
+![second half of read me gen](./assets/img/README_con.png)
 <!-- TO DO INCLUDE LINK TO VIDEO HERE -->
+## Link to Video Demo
+https://drive.google.com/file/d/1M3qx4RfgNJKC2QEzjFA3ORL-xbGdNATE/view
